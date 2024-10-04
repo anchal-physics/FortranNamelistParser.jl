@@ -2,35 +2,37 @@
 
 |                                 **Documentation**                                  |                                                                                                 **Build Status**                                                                                                 |                                        **Others**                                         |
 | :--------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: |
-| [![Stable][docs-stable-img]][docs-stable-url] [![Dev][docs-dev-img]][docs-dev-url] | [![Build Status][gha-img]][gha-url] [![Build Status][appveyor-img]][appveyor-url] [![Build Status][cirrus-img]][cirrus-url] [![pipeline status][gitlab-img]][gitlab-url] [![Coverage][codecov-img]][codecov-url] | [![GitHub license][license-img]][license-url] [![Code Style: Blue][style-img]][style-url] |
+| [![Stable][docs-stable-img]][docs-stable-url] [![Dev][docs-dev-img]][docs-dev-url] | ![Tests][Tests-basge] ![Documentation][Docs-badge] ![Format Check][Format-Check-badge] [![Coverage][codecov-img]][codecov-url] | [![GitHub license][license-img]][license-url] [![Code Style: Blue][style-img]][style-url] |
 
 [docs-stable-img]: https://img.shields.io/badge/docs-stable-blue.svg
-[docs-stable-url]: https://singularitti.github.io/Fortran90Namelists.jl/stable
+[docs-stable-url]: https://anchal-physics.github.io/Fortran90Namelists.jl/stable
+
+[Format-Check-badge]: https://github.com/anchal-physics/Fortran90Namelists.jl/actions/workflows/format_check.yml/badge.svg
+[Docs-badge]: https://github.com/anchal-physics/Fortran90Namelists.jl/actions/workflows/make_docs.yml/badge.svg
+
+[Tests-basge]: https://github.com/anchal-physics/Fortran90Namelists.jl/actions/workflows/test.yml/badge.svg
+
+[codecov-img]: https://codecov.io/gh/anchal-physics/Fortran90Namelists.jl/graph/badge.svg?token=ZJBRLAXIS1
+
+[codecov-url]: https://codecov.io/gh/anchal-physics/Fortran90Namelists.jl
+
+
 [docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
-[docs-dev-url]: https://singularitti.github.io/Fortran90Namelists.jl/dev
-[gha-img]: https://github.com/singularitti/Fortran90Namelists.jl/workflows/CI/badge.svg
-[gha-url]: https://github.com/singularitti/Fortran90Namelists.jl/actions
-[appveyor-img]: https://ci.appveyor.com/api/projects/status/github/singularitti/Fortran90Namelists.jl?svg=true
-[appveyor-url]: https://ci.appveyor.com/project/singularitti/Fortran90Namelists-jl
-[cirrus-img]: https://api.cirrus-ci.com/github/singularitti/Fortran90Namelists.jl.svg
-[cirrus-url]: https://cirrus-ci.com/github/singularitti/Fortran90Namelists.jl
-[gitlab-img]: https://gitlab.com/singularitti/Fortran90Namelists.jl/badges/main/pipeline.svg
-[gitlab-url]: https://gitlab.com/singularitti/Fortran90Namelists.jl/-/pipelines
-[codecov-img]: https://codecov.io/gh/singularitti/Fortran90Namelists.jl/branch/main/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/singularitti/Fortran90Namelists.jl
-[license-img]: https://img.shields.io/github/license/singularitti/Fortran90Namelists.jl
-[license-url]: https://github.com/singularitti/Fortran90Namelists.jl/blob/main/LICENSE
+[docs-dev-url]: https://anchal-physics.github.io/Fortran90Namelists.jl/dev
+[license-img]: https://img.shields.io/github/license/anchal-physics/Fortran90Namelists.jl
+[license-url]: https://github.com/anchal-physics/Fortran90Namelists.jl/blob/main/LICENSE
 [style-img]: https://img.shields.io/badge/code%20style-blue-4495d1.svg
 [style-url]: https://github.com/invenia/BlueStyle
 
-A [Julia](https://julialang.org/) implementation of Python
+A pure [Julia](https://julialang.org/) implementation of Python
 [`f90nml`](https://github.com/marshallward/f90nml) package.
 
-The code is [hosted on GitHub](https://github.com/singularitti/Fortran90Namelists.jl),
+The code is [hosted on GitHub](https://github.com/anchal-physics/Fortran90Namelists.jl),
 with some continuous integration services to test its validity.
 
-This repository is created and maintained by [@singularitti](https://github.com/singularitti).
-You are very welcome to contribute.
+This repository is forked from original [repo](https://github.com/singularitti/Fortran90Namelists.jl) from [@singularitti](https://github.com/singularitti). [@singularitti](https://github.com/singularitti) is the major author of this package and the owner and mainter of this repository [@anchal-physics](https://github.com/anchal-physics) is only taking care of julia registration and minimal maintainence.
+
+You are very welcome to contribute and/or take over the ownership of this project.
 
 ## Installation
 
@@ -59,11 +61,9 @@ macOS, and Windows.
 
 ## Questions and contributions
 
-You are welcome to post usage questions on [our discussion page][discussions-url].
 
 Contributions are very welcome, as are feature requests and suggestions. Please open an
 [issue][issues-url] if you encounter any problems. The [Contributing](@ref) page has
 guidelines that should be followed when opening pull requests and contributing code.
 
-[discussions-url]: https://github.com/singularitti/Fortran90Namelists.jl/discussions
-[issues-url]: https://github.com/singularitti/Fortran90Namelists.jl/issues
+[issues-url]: https://github.com/anchal-physics/Fortran90Namelists.jl/issues

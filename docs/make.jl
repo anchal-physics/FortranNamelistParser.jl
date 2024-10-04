@@ -6,11 +6,11 @@ DocMeta.setdocmeta!(Fortran90Namelists, :DocTestSetup, :(using Fortran90Namelist
 makedocs(;
     modules=[Fortran90Namelists],
     authors="singularitti <singularitti@outlook.com> and contributors",
-    repo="https://github.com/singularitti/Fortran90Namelists.jl/blob/{commit}{path}#{line}",
+    repo="https://github.com/anchal-physics/Fortran90Namelists.jl/blob/{commit}{path}#{line}",
     sitename="Fortran90Namelists.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://singularitti.github.io/Fortran90Namelists.jl",
+        canonical="https://anchal-physics.github.io/Fortran90Namelists.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -23,13 +23,16 @@ makedocs(;
         "Developer Docs" => [
             "Contributing" => "developers/contributing.md",
             "Style Guide" => "developers/style-guide.md",
-            "Design Principles" => "developers/design-principles.md",
         ],
         "Troubleshooting" => "troubleshooting.md",
     ],
+    checkdocs=:none,
 )
 
 deploydocs(;
-    repo="github.com/singularitti/Fortran90Namelists.jl",
+    repo="github.com/anchal-physics/Fortran90Namelists.jl",
+    target="build",
+    branch="gh-pages",
     devbranch="main",
+    versions=["stable" => "v^", "v#.#"],
 )

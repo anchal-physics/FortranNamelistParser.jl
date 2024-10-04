@@ -27,7 +27,7 @@ If not following, your pull requests may not be accepted.
 Fortran90Namelists uses [JuliaFormatter](https://github.com/domluna/JuliaFormatter.jl) as
 an auto-formatting tool.
 
-We use the options contained in [`.JuliaFormatter.toml`](https://github.com/singularitti/Fortran90Namelists.jl/blob/main/.JuliaFormatter.toml).
+We use the options contained in [`.JuliaFormatter.toml`](https://github.com/anchal-physics/Fortran90Namelists.jl/blob/main/.JuliaFormatter.toml).
 
 To format your code, `cd` to the Fortran90Namelists directory, then run:
 

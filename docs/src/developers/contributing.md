@@ -7,34 +7,17 @@ Depth = 2
 
 Welcome! This document explains some ways you can contribute to Fortran90Namelists.
 
-## Code of conduct
-
-This project and everyone participating in it is governed by the
-[Contributor Covenant Code of Conduct](https://github.com/MineralsCloud/.github/blob/main/CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code.
-
-## Join the community forum
-
-First up, join the [community forum](https://github.com/singularitti/Fortran90Namelists.jl/discussions).
-
-The forum is a good place to ask questions about how to use Fortran90Namelists. You can also
-use the forum to discuss possible feature requests and bugs before raising a
-GitHub issue (more on this below).
-
-Aside from asking questions, the easiest way you can contribute to Fortran90Namelists is to
-help answer questions on the forum!
-
 ## Improve the documentation
 
 Chances are, if you asked (or answered) a question on the community forum, then
-it is a sign that the [documentation](https://singularitti.github.io/Fortran90Namelists.jl/dev/) could be
+it is a sign that the [documentation](https://anchal-physics.github.io/Fortran90Namelists.jl/dev/) could be
 improved. Moreover, since it is your question, you are probably the best-placed
 person to improve it!
 
 The docs are written in Markdown and are built using
 [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl).
 You can find the source of all the docs
-[here](https://github.com/singularitti/Fortran90Namelists.jl/tree/main/docs).
+[here](https://github.com/anchal-physics/Fortran90Namelists.jl/tree/main/docs).
 
 If your change is small (like fixing typos or one or two sentence corrections),
 the easiest way to do this is via GitHub's online editor. (GitHub has
@@ -49,15 +32,15 @@ change locally and then use Git to submit a
 ## File a bug report
 
 Another way to contribute to Fortran90Namelists is to file
-[bug reports](https://github.com/singularitti/Fortran90Namelists.jl/issues/new?template=bug_report.md).
+[bug reports](https://github.com/anchal-physics/Fortran90Namelists.jl/issues/new?template=bug_report.md).
 
 Make sure you read the info in the box where you write the body of the issue
 before posting. You can also find a copy of that info
-[here](https://github.com/singularitti/Fortran90Namelists.jl/blob/main/.github/ISSUE_TEMPLATE/bug_report.md).
+[here](https://github.com/anchal-physics/Fortran90Namelists.jl/blob/main/.github/ISSUE_TEMPLATE/bug_report.md).
 
 !!! tip
     If you're unsure whether you have a real bug, post on the
-    [community forum](https://github.com/singularitti/Fortran90Namelists.jl/discussions)
+    [community forum](https://github.com/anchal-physics/Fortran90Namelists.jl/discussions)
     first. Someone will either help you fix the problem or let you know the
     most appropriate place to open a bug report.
 
@@ -79,7 +62,7 @@ Fortran90Namelists is similar to the following:
 
 ### Step 1: decide what to work on
 
-The first step is to find an [open issue](https://github.com/singularitti/Fortran90Namelists.jl/issues)
+The first step is to find an [open issue](https://github.com/anchal-physics/Fortran90Namelists.jl/issues)
 (or open a new one) for the problem you want to solve. Then, _before_ spending
 too much time on it, discuss what you are planning to do in the issue to see if
 other contributors are fine with your proposed changes. Getting feedback early can
@@ -93,7 +76,7 @@ Fortran90Namelists.
 
 ### Step 2: fork Fortran90Namelists
 
-Go to [https://github.com/singularitti/Fortran90Namelists.jl](https://github.com/singularitti/Fortran90Namelists.jl)
+Go to [https://github.com/anchal-physics/Fortran90Namelists.jl](https://github.com/anchal-physics/Fortran90Namelists.jl)
 and click the "Fork" button in the top-right corner. This will create a copy of
 Fortran90Namelists under your GitHub account.
 
@@ -227,7 +210,7 @@ git commit -m "A descriptive message of the changes"
 git push -u GITHUB_ACCOUNT my_new_branch
 ```
 
-Then go to [https://github.com/singularitti/Fortran90Namelists.jl/pulls](https://github.com/singularitti/Fortran90Namelists.jl/pulls)
+Then go to [https://github.com/anchal-physics/Fortran90Namelists.jl/pulls](https://github.com/anchal-physics/Fortran90Namelists.jl/pulls)
 and follow the instructions that pop up to open a pull request.
 
 ### Step 8: respond to comments
