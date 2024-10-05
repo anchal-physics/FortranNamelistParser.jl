@@ -113,7 +113,6 @@ function readnml!(io, data; verbose=false)
     return data
 end
 
-
 """
     writenml(filename::String, data::AbstractDict; verbose=false)::String
 
