@@ -61,6 +61,8 @@ function lex!(lx::Tokenizer, line)
                         COMMA
                     elseif word in PUNCTUATION
                         OPERATOR
+                    elseif word == "*"
+                        OPERATOR
                     else
                         error("unsupported punctuation: `$word`!")
                     end,
