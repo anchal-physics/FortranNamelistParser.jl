@@ -1,35 +1,30 @@
 export readnml, writenml
-"""
-The codes for readnlm and writenlm have been taken from
-https://github.com/ProjectTorreyPines/Fortran90Namelists.jl/blob/d623136e1c91bc0789d675879066b23151d2b74a/src/Namelist.jl
-"""
 
 """
-    readnml(filename::String; verbose=false)::Dict
+    readnml(filename::String; verbose=false)::AbstractDict
 
 Parse fortran namelist in given filename and returns data in nested dictionary structure
 
 NOTE: This parser has the following known limitations (which may be fixed in the future):
-
-  - Cannot handle vector indexes ==> we should use sparsearrays
-  - Cannot handle multidimensional arrays
-  - Cannot handle complex numbers
-  - Cannot handle `!` `;` `#` in strings
-  - Cannot handle 1.0+0 exponential notation
-  - Will completely neglect comments
-  - Will completely neglect text outside of namelist delimiters
+- Cannot handle vector indexes ==> we should use sparsearrays
+- Cannot handle multidimensional arrays
+- Cannot handle complex numbers
+- Cannot handle `!` `;` `#` in strings
+- Cannot handle 1.0+0 exponential notation
+- Will completely neglect comments
+- Will completely neglect text outside of namelist delimiters
 
 These limitations can easily be seen by running regression tests.
 Still, even with limited functionalites this should cover most common FORTRAN namelist usage.
 """
-function readnml(filename::String; verbose=false)::Dict
+function readnml(filename::String; verbose=false)::AbstractDict
     open(filename, "r") do io
-        return readnml(io; verbose=verbose)
+        readnml(io; verbose=verbose)
     end
 end
 
 function readnml(io::IO; verbose=false)
-    data = Dict()
+    data = OrderedDict()
     return readnml!(io, data; verbose=verbose)
 end
 
@@ -61,7 +56,7 @@ function readnml!(io, data; verbose=false)
         # open of namelist
         if item[1] == "&"
             if !(item[2] in keys(h))
-                h[Symbol(item[2])] = Dict()
+                h[Symbol(item[2])] = OrderedDict()
                 h[Symbol(item[2])][:parent] = h
             end
             h = h[Symbol(item[2])]
@@ -83,7 +78,7 @@ function readnml!(io, data; verbose=false)
                 else
                     tmp = item[3:end]
                     value = Any[]
-                    for k in 1:length(tmp)
+                    for k in eachindex(tmp)
                         if (k - 1 > 1) && (tmp[k - 1] == "*")
                         elseif tmp[k] == "*"
                         elseif (k + 1 < length(tmp)) && (tmp[k + 1] == "*")
@@ -118,20 +113,21 @@ function readnml!(io, data; verbose=false)
     return data
 end
 
+
 """
-    writenml(filename::String, data::Dict; verbose=false)::String
+    writenml(filename::String, data::AbstractDict; verbose=false)::String
 
 Write nested dictionary structure as fortran namelist to a given filename
 
 NOTE: For a list of known limitations look at the help of readnml()
 """
-function writenml(filename::String, data::Dict; verbose=false)::String
+function writenml(filename::String, data::AbstractDict; verbose=false)::String
     open(filename, "w") do io
-        return writenml(io, data; verbose=verbose)
+        writenml(io, data; verbose=verbose)
     end
 end
 
-function writenml(io::IO, data::Dict; verbose=false)
+function writenml(io::IO, data::AbstractDict; verbose=false)
     txt = []
 
     for nml in keys(data)
