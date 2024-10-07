@@ -11,7 +11,6 @@ and types.
 
 This repository is forked from original [repo](https://github.com/singularitti/Fortran90Namelists.jl) from [@singularitti](https://github.com/singularitti). [@singularitti](https://github.com/singularitti) is the major author of this package and the owner and mainter of this repository [@anchal-physics](https://github.com/anchal-physics) is only taking care of julia registration and minimal maintainence.
 
-This repository is created and maintained by [@anchal-physics](https://github.com/anchal-physics).
 You are very welcome to contribute.
 
 ## Installation
