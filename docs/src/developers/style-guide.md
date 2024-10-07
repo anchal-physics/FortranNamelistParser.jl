@@ -14,8 +14,8 @@ before contributing to this package.
 If not following, your pull requests may not be accepted.
 
 !!! info
-    The style guide is always a work in progress, and not all Fortran90Namelists code
-    follows the rules. When modifying Fortran90Namelists, please fix the style violations
+    The style guide is always a work in progress, and not all FortranNamelistParser code
+    follows the rules. When modifying FortranNamelistParser, please fix the style violations
     of the surrounding code (i.e., leave the code tidier than when you
     started). If large changes are needed, consider separating them into
     another pull request.
@@ -24,12 +24,12 @@ If not following, your pull requests may not be accepted.
 
 ### Run JuliaFormatter
 
-Fortran90Namelists uses [JuliaFormatter](https://github.com/domluna/JuliaFormatter.jl) as
+FortranNamelistParser uses [JuliaFormatter](https://github.com/domluna/JuliaFormatter.jl) as
 an auto-formatting tool.
 
-We use the options contained in [`.JuliaFormatter.toml`](https://github.com/anchal-physics/Fortran90Namelists.jl/blob/main/.JuliaFormatter.toml).
+We use the options contained in [`.JuliaFormatter.toml`](https://github.com/anchal-physics/FortranNamelistParser.jl/blob/main/.JuliaFormatter.toml).
 
-To format your code, `cd` to the Fortran90Namelists directory, then run:
+To format your code, `cd` to the FortranNamelistParser directory, then run:
 
 ```@repl
 using Pkg
@@ -41,7 +41,7 @@ format("test")
 ```
 
 !!! info
-    A continuous integration check verifies that all PRs made to Fortran90Namelists have
+    A continuous integration check verifies that all PRs made to FortranNamelistParser have
     passed the formatter.
 
 The following sections outline extra style guide points that are not fixed

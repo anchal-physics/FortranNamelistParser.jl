@@ -1,7 +1,7 @@
-using Fortran90Namelists
+using FortranNamelistParser
 using Test
 
-@testset "Fortran90Namelists.jl" begin
+@testset "FortranNamelistParser.jl" begin
     include("fparse_tests.jl")
     include("Tokenizer_tests.jl")
     include("file_io_tests.jl")

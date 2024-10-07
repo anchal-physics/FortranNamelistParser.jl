@@ -1,16 +1,15 @@
 ```@meta
-CurrentModule = Fortran90Namelists
+CurrentModule = FortranNamelistParser
 ```
 
-# Fortran90Namelists
+# FortranNamelistParser
 
-Documentation for [Fortran90Namelists](https://github.com/anchal-physics/Fortran90Namelists.jl).
+Documentation for [FortranNamelistParser](https://github.com/anchal-physics/FortranNamelistParser.jl).
 
 See the [Index](@ref main-index) for the complete list of documented functions
 and types.
 
-The code is [hosted on GitHub](https://github.com/anchal-physics/Fortran90Namelists.jl),
-with some continuous integration services to test its validity.
+This repository is forked from original [repo](https://github.com/singularitti/Fortran90Namelists.jl) from [@singularitti](https://github.com/singularitti). [@singularitti](https://github.com/singularitti) is the major author of this package and the owner and mainter of this repository [@anchal-physics](https://github.com/anchal-physics) is only taking care of julia registration and minimal maintainence.
 
 This repository is created and maintained by [@anchal-physics](https://github.com/anchal-physics).
 You are very welcome to contribute.
@@ -21,19 +20,19 @@ The package can be installed with the Julia package manager.
 From the Julia REPL, type `]` to enter the Pkg REPL mode and run:
 
 ```julia
-pkg> add Fortran90Namelists
+pkg> add FortranNamelistParser
 ```
 
 Or, equivalently, via the `Pkg` API:
 
 ```@repl
-import Pkg; Pkg.add("Fortran90Namelists")
+import Pkg; Pkg.add("FortranNamelistParser")
 ```
 
 ## Documentation
 
-- [**STABLE**](https://anchal-physics.github.io/Fortran90Namelists.jl/stable) — **documentation of the most recently tagged version.**
-- [**DEV**](https://anchal-physics.github.io/Fortran90Namelists.jl/dev) — _documentation of the in-development version._
+- [**STABLE**](https://anchal-physics.github.io/FortranNamelistParser.jl/stable) — **documentation of the most recently tagged version.**
+- [**DEV**](https://anchal-physics.github.io/FortranNamelistParser.jl/dev) — _documentation of the in-development version._
 
 ## Project status
 
@@ -43,7 +42,7 @@ macOS, and Windows.
 ## Questions and contributions
 
 Contributions are very welcome, as are feature requests and suggestions. Please open an
-[issue](https://github.com/anchal-physics/Fortran90Namelists.jl/issues)
+[issue](https://github.com/anchal-physics/FortranNamelistParser.jl/issues)
 if you encounter any problems. The [Contributing](@ref) page has
 a few guidelines that should be followed when opening pull requests and contributing code.
 

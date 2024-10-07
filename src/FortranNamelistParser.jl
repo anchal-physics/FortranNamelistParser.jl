@@ -1,4 +1,4 @@
-module Fortran90Namelists
+module FortranNamelistParser
 
 using OrderedCollections
 

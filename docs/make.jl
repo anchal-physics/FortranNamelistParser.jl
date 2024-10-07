@@ -1,18 +1,18 @@
-using Fortran90Namelists
+using FortranNamelistParser
 using Documenter
 
 DocMeta.setdocmeta!(
-    Fortran90Namelists, :DocTestSetup, :(using Fortran90Namelists); recursive=true
+    FortranNamelistParser, :DocTestSetup, :(using FortranNamelistParser); recursive=true
 )
 
 makedocs(;
-    modules=[Fortran90Namelists],
+    modules=[FortranNamelistParser],
     authors="singularitti <singularitti@outlook.com> and contributors",
-    repo="https://github.com/anchal-physics/Fortran90Namelists.jl/blob/{commit}{path}#{line}",
-    sitename="Fortran90Namelists.jl",
+    repo="https://github.com/anchal-physics/FortranNamelistParser.jl/blob/{commit}{path}#{line}",
+    sitename="FortranNamelistParser.jl",
     format=Documenter.HTML(;
         prettyurls=get(ENV, "CI", "false") == "true",
-        canonical="https://anchal-physics.github.io/Fortran90Namelists.jl",
+        canonical="https://anchal-physics.github.io/FortranNamelistParser.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -30,7 +30,7 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/anchal-physics/Fortran90Namelists.jl",
+    repo="github.com/anchal-physics/FortranNamelistParser.jl",
     target="build",
     branch="gh-pages",
     devbranch="main",

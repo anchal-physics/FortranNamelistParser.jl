@@ -1,5 +1,5 @@
 ```@meta
-CurrentModule = Fortran90Namelists
+CurrentModule = FortranNamelistParser
 ```
 
 # API Reference
