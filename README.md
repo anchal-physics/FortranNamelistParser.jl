@@ -12,9 +12,9 @@
 
 [Tests-basge]: https://github.com/anchal-physics/FortranNamelistParser.jl/actions/workflows/test.yml/badge.svg
 
-[codecov-img]: https://codecov.io/gh/anchal-physics/FortranNamelistParser.jl/graph/badge.svg?token=ZJBRLAXIS1
+[codecov-img]: https://codecov.io/gh/anchal-physics/Fortran90Namelists.jl/graph/badge.svg?token=ZJBRLAXIS1
 
-[codecov-url]: https://codecov.io/gh/anchal-physics/FortranNamelistParser.jl
+[codecov-url]: https://codecov.io/gh/anchal-physics/Fortran90Namelists.jl
 
 
 [docs-dev-img]: https://img.shields.io/badge/docs-dev-blue.svg
