@@ -1,5 +1,5 @@
 name = "FortranNamelistParser"
-uuid = "8fb689aa-71ff-4044-8071-0cffc910b57d"
+uuid = "bd7787d8-51bb-4c23-a6f0-6dba939e3d23"
 authors = ["singularitti <singularitti@outlook.com>"]
 version = "0.1.0"
 
