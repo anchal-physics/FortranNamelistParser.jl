@@ -9,12 +9,13 @@ Documentation for [FortranNamelistParser](https://github.com/anchal-physics/Fort
 See the [Index](@ref main-index) for the complete list of documented functions
 and types.
 
-This repository is forked from original [repo](https://github.com/singularitti/Fortran90Namelists.jl) from [@singularitti](https://github.com/singularitti). [@singularitti](https://github.com/singularitti) is the major author of this package and the owner and mainter of this repository [@anchal-physics](https://github.com/anchal-physics) is only taking care of julia registration and minimal maintainence.
+This repository was forked from [singularitti/FortranNamelistParser.jl](https://github.com/singularitti/Fortran90Namelists.jl/commit/d7eaefe084875d3de11b4fd0fd7e568fbbdd8b60) and new functions to read namelist files into dictionary and write dictiory into Fortran namelist files have been added. Some minor fixes in parsing have also been done to ensure all sample namelist files are read correctly.
 
-You are very welcome to contribute.
+If your usecase namelist file is not being read/written correctly, please open a issue and attach a namelist file with code to reproduce the error. Alternatively, you are more than welcome to contribute directly to the repo to get your usecase supported.
+
 
 ## Installation
-
+Â
 The package can be installed with the Julia package manager.
 From the Julia REPL, type `]` to enter the Pkg REPL mode and run:
 
@@ -68,3 +69,9 @@ Pages = ["api.md"]
 ```@index
 Pages = ["api.md"]
 ```
+
+## Alternatives
+
+* [FortranNamelists.jl](https://gitlab.com/seamsay/FortranNamelists.jl): Another pure Julia package for reading (and writing) Fortran namelist files. This package is another take at the parser with different features and is similar to Fortran in use. Please check if this package meets your needs better.
+* [PyFortran90Namelists](https://github.com/singularitti/PyFortran90Namelists.jl): A package which uses `PyCall` to call the python librabry `f90nml` to perform the parsing.
+* [Fortran90Namelists](https://github.com/singularitti/Fortran90Namelists.jl): A work in progress package which would probably supersede this package in future when registered.
